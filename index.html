@@ -280,6 +280,26 @@
                 </ul>
             
             </div>
+            <div class="subscribe">
+                <h3 class="join">Підпишіться на розсилку</h3>
+                    <div class="subscribe-block">
+                        <label class="footer-subscribe"></label>
+                            <input type="email" 
+                            title="ввести email"
+                            class="footer-email-input"
+                            placeholder="E-mail">
+                        <button type="button" width="200" height="50"
+                            class="subscribe-button"> 
+                                <div class="subscribe-button-block">
+                                <span class="button-title"> Підписатися </span>
+                                    <svg class="subscribe-button-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-telegram-pic"></use>
+                                    </svg>
+                                </div>    
+                        </button>    
+                    </div>
+
+            </div>
         </div>
     </footer>
     <!------Modal-------->
@@ -288,7 +308,7 @@
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form action="" class="modal-form">
                 <div class="modal-field">
-                    <label for="user-name" class="inpun-label">Ім'я</label>
+                    <label for="user-name" class="inpun-label"> <span class="form-title">Ім'я</span> </label>
                     <div class="input-wrapper">
                         <input type="text"
                         class="modal-input"
@@ -301,19 +321,59 @@
                     </div>
                 </div>
                 <div class="modal-field">
-                    <label for="user-text" class="input-label">Коментар
+                    <label for="user-name" class="inpun-label"> <span class="form-title">Телефон</span> </label>
+                    <div class="input-wrapper">
+                        <input type="tel"
+                        class="modal-input"
+                        name="user-name"
+                        id="user-name"
+                        required>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone-pic"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-name" class="inpun-label"> <span class="form-title">Пошта</span> </label>
+                    <div class="input-wrapper">
+                        <input type="email"
+                        class="modal-input"
+                        name="user-name"
+                        id="user-name"
+                        required>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email-pic"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-text" class="input-label"> <span class="form-title">Коментар</span> 
                         <textarea name="user-text" 
                         id="user-text" 
                         class="modal-coment"
                         placeholder="Введіть текст"></textarea>
                     </label>
                 </div>
-
-
-
+                <div class="modal-field">
+                    <label for="user-text" class="input-label">
+                        <div>
+                            <input type="radio" 
+                            class="radio-button" 
+                            name="user-name" 
+                            id="user-name">
+                            <span class="lic-agreement"> Погоджуюся з розсилкою та приймаю  
+                                <a href="#" class="agreement">Умови договору</a> 
+                            </span>
+                        </div>
+                    </label>
+                </div>
             </form>
-                <button type="submit"> Відправити                
-                </button>
+                <div class="form-button">
+                    <button type="submit" 
+                        title="відправити" 
+                        class="submit-button"> <span class="send">Відправити</span>                 
+                    </button>
+                </div>
             </form>
             <button type="button" class="modal-close" data-modal-close> 
                 <svg class="close" width="18px" height="18px"> 

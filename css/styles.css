@@ -168,7 +168,6 @@ button {
     border-radius: 2px;
     bottom: -1px;
     transition: opacity 250ms var(--button-push-background);
-   
 }
 
 .links.links.current {
@@ -725,7 +724,8 @@ background-color: var(--button-push-active);
     display: flex;
     gap: 10px;
 }
-.footer-social {
+.footer-social,
+.subscribe {
     margin-left: 70px;
     padding-top: 72px;
 }
@@ -764,6 +764,67 @@ background-color: var(--button-push-active);
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--links-conact-hover-focus);
+}
+
+.footer-email-input {
+    width: 358px;
+    height: 50px; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.subscribe-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe-button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    display: flex;
+    background: var(--button-push-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    gap: 10px;
+}
+
+.subscribe-button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-title {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding-left: 28px;
+  
+    margin-right: 10px;
+}
+
+.submit-button-icon {
+    position: absolute;
+    padding-right: 28px;
+    
+
 }
 
 /* ---------------- Portfolio / buttons --------- */
@@ -852,6 +913,11 @@ background-color: var(--button-push-active);
         
 }
 
+.modal-close:hover .close,
+.modal-close:focus .close {
+    fill: var(--button-push-background);
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -881,11 +947,13 @@ background-color: var(--button-push-active);
     padding-left: 35px;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
     border-color: var(--button-push-background);
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:focus + .modal-icon
+.modal-input:hover + .modal-icon {
     fill: var(--button-push-background);
 }
 
@@ -914,14 +982,79 @@ background-color: var(--button-push-active);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    margin-bottom: 20px;
 }
 
 .form-name-icon {
     position: absolute;
 }
 
-.modal-coment:focus {
+.modal-coment:focus,
+.modal-coment:hover {
     border-color: var(--button-push-background);
+}
+
+.form-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666;
+    letter-spacing: 0.01em;
+    color: var(--advantage-title-color);
+    margin-bottom: 4px;
+}
+
+.lic-agreement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: var(--advantage-title-color);
+}
+
+
+.agreement {
+    text-decoration-line: underline;
+    color: var(--button-push-background);
+}
+
+.modal-form {
+    margin-bottom: 30px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    background: var(--button-push-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--order-button-color);
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: var(--button-push-active);
+}
+
+.send {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--background-color2);
 }
 
 /* ------------- filter cards --------- */
