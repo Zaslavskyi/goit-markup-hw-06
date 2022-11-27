@@ -725,12 +725,16 @@ background-color: var(--button-push-active);
     gap: 10px;
 }
 .footer-social,
+
+
 .subscribe {
-    margin-left: 70px;
+    margin-left: auto;
     padding-top: 72px;
+    justify-content: flex-end;
 }
 
-.join {
+.join,
+.join-subscribe  {
         margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
@@ -738,6 +742,10 @@ background-color: var(--button-push-active);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--address-color);
+}
+
+{
+
 }
 
 .footer-social-link {
@@ -784,9 +792,12 @@ background-color: var(--button-push-active);
     padding-bottom: 15px;
 }
 
+
+
 .subscribe-block {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .subscribe-button {
@@ -794,6 +805,8 @@ background-color: var(--button-push-active);
     height: 50px;
     display: block;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--button-push-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -804,7 +817,7 @@ background-color: var(--button-push-active);
 .subscribe-button-block {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: c;
 }
 
 .button-title {
@@ -825,6 +838,11 @@ background-color: var(--button-push-active);
     padding-right: 28px;
     
 
+}
+
+.footer-email-input:hover,
+.footer-email-input:focus {
+    
 }
 
 /* ---------------- Portfolio / buttons --------- */
