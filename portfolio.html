@@ -214,11 +214,12 @@
             </div>
         </section>
     </main>
-<footer class="footer">
-    <div class="container container-footer">
-        <div class="footer-logo">
-            <a href="#" title="Головна" target="_blank" class="container-footer-links-logo">
-                <span class="logo-beg">
+    <footer class="footer">
+        <!--------Footer logo & contacts------->
+        <div class="container container-footer">
+            <div class="footer-logo">
+            <a href="#" title="Головна" target="_blank" class="container-footer-links-logo"> 
+                <span class="logo-beg"> 
                     Web
                 </span>
                 <span class="logo-end-down">
@@ -226,40 +227,55 @@
                 </span>
             </a>
             <ul class="container-footer-links">
-                <li class="footer-list">
-                    <address class="address "> м. Київ, пр-т Лесі Українки, 26</address>
-                </li>
-                <li class="footer-list"><a href="mailto:info@devstudio.com" title="Надіслати листа"
-                        class="footer-link">info@devstudio.com</a></li>
-                <li class="footer-list"><a href="tel:+380961111111" title="Зателефонувати" class="footer-link">+38 096
-                        111 11 11</a></li>
+                <li class="footer-list"> <address class="address "> м. Київ, пр-т Лесі Українки, 26</address></li>
+                <li class="footer-list"><a href="mailto:info@devstudio.com" title="Надіслати листа" class="footer-link">info@devstudio.com</a></li>
+                <li class="footer-list"><a href="tel:+380961111111" title="Зателефонувати" class="footer-link">+38 096 111 11 11</a></li>
             </ul>
+            </div>
+            <!-----Footer Social links-->
+            <div class="footer-social">
+                <h3 class="join">приєднуйтесь</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item"> <a class="footer-social-link" href="https://www.instagram.com/" title="Інстаграм" target="_blank">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg></a></li>
+                    <li class="footer-social-item"> <a class="footer-social-link" href="https://twitter.com/" title="Твітер" target="_blank">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg></a></li>
+                    <li class="footer-social-item"> <a class="footer-social-link" href="https://www.facebook.com/" title="Фейсбук" target="_blank">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg></a></li>
+                    <li class="footer-social-item"> <a class="footer-social-link" href="https://www.linkedin.com/" title="Лінкендин" target="_blank">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg></a></li>
+                </ul>
+            
+            </div>
+            <div class="subscribe">
+                <p class="join">Підпишіться на розсилку</p>
+                <form class="subscribe-block">
+                        <label for="email" class="footer-subscribe"></label>
+                            <input type="email" 
+                            title="ввести email"
+                            class="footer-email-input"
+                            name="email"
+                            placeholder="E-mail">
+                        <button type="submit" width="200" height="50"
+                            class="subscribe-button button-push"> 
+                                <div class="subscribe-button-block">
+                                <span class="button-title"> Підписатися </span>
+                                    <svg class="subscribe-button-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-telegram-pic"></use>
+                                    </svg>
+                                </div>    
+                        </button>    
+                </form>
         </div>
-        <!------Footer social links-------->
-        <div class="footer-social">
-            <h3 class="join">приєднуйтесь</h3>
-            <ul class="footer-social-list">
-                <li class="footer-social-item"> <a class="footer-social-link" href="https://www.instagram.com/" title="Інстаграм" target="_blank">
-                        <svg class="footer-social-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram-2"></use>
-                        </svg></a></li>
-                <li class="footer-social-item"> <a class="footer-social-link" href="https://twitter.com/" title="Твітер" target="_blank">
-                        <svg class="footer-social-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter-1"></use>
-                        </svg></a></li>
-                <li class="footer-social-item"> <a class="footer-social-link" href="https://www.facebook.com/" title="Фейсбук" target="_blank">
-                        <svg class="footer-social-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook-1"></use>
-                        </svg></a></li>
-                <li class="footer-social-item"> <a class="footer-social-link" href="https://www.linkedin.com/" title="Линкендин" target="_blank">
-                        <svg class="footer-social-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin-1"></use>
-                        </svg></a></li>
-            </ul>
-
-        </div>
-    </div>
-</footer>
+    </footer>
 <script src="./js/modal.js"></script>
     </body>
     </html>
