@@ -724,9 +724,8 @@ background-color: var(--button-push-active);
     display: flex;
     gap: 10px;
 }
+
 .footer-social,
-
-
 .subscribe {
     margin-left: auto;
     padding-top: 72px;
@@ -787,6 +786,9 @@ background-color: var(--button-push-active);
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 
